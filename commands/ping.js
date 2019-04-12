@@ -2,7 +2,7 @@ module.exports.run = (bot, message, args) => {
   const ping = Math.floor(bot.ping)
   
   const embed = new (require('discord.js').RichEmbed)()
-  .setTitle("Hulk Moosic Ping Command")
+  .setTitle("Ping Command")
   .setDescription(`PONG! My ping is ${ping}ms!`)
   .setColor("GREEN")
   .setTimestamp()
