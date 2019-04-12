@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 module.exports.run = (bot, message, args) => {
-  if (message.author.id == "242734840829575169") {
+  if (message.author.id == "459175543154147328") {
     const content = message.content.split(' ').slice(1).join(' ');
   const result = new Promise((resolve, reject) => resolve(eval(content)));
 
