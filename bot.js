@@ -1,6 +1,6 @@
 const discord = require('discord.js')
 const bot = new discord.Client()
-const prefix = "f:"
+const prefix = "m!"
 bot.commands = new discord.Collection()
 
 require('fs').readdir('./commands/', (err, files) => {
@@ -11,9 +11,9 @@ require('fs').readdir('./commands/', (err, files) => {
 })
 
 bot.on('ready', () => {
-  bot.user.setActivity("Loading Hulk Moosic...", {type: "STREAMING", url: "https://twitch.tv/discordapp"})
+  bot.user.setActivity("Loading Discord Music...", {type: "STREAMING", url: "https://twitch.tv/discordapp"})
   setTimeout(() => {
-    bot.user.setActivity(`music in FHG's Discord | f:help`, {type: "PLAYING"})
+    bot.user.setActivity(`music in Discord.Py Server | m!help`, {type: "PLAYING"})
   }, 10000)
   console.log("%s is ready!".replace("%s", bot.user.username))
 })
